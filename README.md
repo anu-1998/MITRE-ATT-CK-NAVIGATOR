@@ -1,12 +1,14 @@
 # MITRE-ATT-CK-NAVIGATOR
 
 MITRE ATT&CK – SOC Attack Scenario Mapping
+---
 
 This repository demonstrates a practical attack scenario mapped to the MITRE ATT&CK framework using the MITRE ATT&CK Navigator.
 The project is designed to showcase how a SOC analyst can model and understand real-world attacker behavior from initial access to data exfiltration.
+
+
+
 ---
-
-
 📌 Project Overview
 
 The goal of this project is to:
