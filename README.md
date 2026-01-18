@@ -4,6 +4,8 @@ MITRE ATT&CK – SOC Attack Scenario Mapping
 
 This repository demonstrates a practical attack scenario mapped to the MITRE ATT&CK framework using the MITRE ATT&CK Navigator.
 The project is designed to showcase how a SOC analyst can model and understand real-world attacker behavior from initial access to data exfiltration.
+---
+
 
 📌 Project Overview
 
@@ -18,6 +20,8 @@ Understand how attackers move through different tactics during an intrusion
 Build SOC-focused documentation suitable for learning and portfolio purposes
 
 This is a practice / learning project, not a full APT simulation.
+---
+
 
 🧨 Attack Scenario Summary
 
@@ -36,3 +40,15 @@ Credentials dumped from LSASS
 Lateral movement using RDP
 
 Sensitive data exfiltrated over HTTPS to a C2 server
+---
+
+| Tactic              | Technique                                     | ID        |
+| ------------------- | --------------------------------------------- | --------- |
+| Initial Access      | Phishing: Attachment                          | T1566.001 |
+| Execution           | Command and Scripting Interpreter: PowerShell | T1059.001 |
+| Command and Control | Ingress Tool Transfer                         | T1105     |
+| Persistence         | Registry Run Keys / Startup Folder            | T1547.001 |
+| Credential Access   | OS Credential Dumping: LSASS Memory           | T1003.001 |
+| Lateral Movement    | Remote Services: RDP                          | T1021.001 |
+| Exfiltration        | Exfiltration Over C2 Channel                  | T1041     |
+
