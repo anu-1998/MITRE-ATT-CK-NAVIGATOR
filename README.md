@@ -10,6 +10,7 @@ The project is designed to showcase how a SOC analyst can model and understand r
 
 ---
 📌 Project Overview
+---
 
 The goal of this project is to:
 
@@ -22,10 +23,12 @@ Understand how attackers move through different tactics during an intrusion
 Build SOC-focused documentation suitable for learning and portfolio purposes
 
 This is a practice / learning project, not a full APT simulation.
+
+
 ---
 
-
 🧨 Attack Scenario Summary
+---
 
 The simulated attack follows this flow:
 
@@ -41,6 +44,8 @@ Credentials dumped from LSASS
 
 Lateral movement using RDP
 
+---
+
 Sensitive data exfiltrated over HTTPS to a C2 server
 ---
 
@@ -53,4 +58,63 @@ Sensitive data exfiltrated over HTTPS to a C2 server
 | Credential Access   | OS Credential Dumping: LSASS Memory           | T1003.001 |
 | Lateral Movement    | Remote Services: RDP                          | T1021.001 |
 | Exfiltration        | Exfiltration Over C2 Channel                  | T1041     |
+
+
+---
+
+🧠 About Missing MITRE ATT&CK Tactics
+---
+
+Some MITRE ATT&CK tactics such as Discovery, Defense Evasion, or Privilege Escalation are not included in this scenario.
+
+This is intentional.
+
+Not every attack uses all tactics
+
+The scenario focuses on a specific attack path
+
+Adding unused techniques would be inaccurate
+
+This approach reflects real SOC investigations, where only observed behavior is mapped.
+
+---
+
+📊 MITRE ATT&CK Navigator
+---
+
+The project includes a custom ATT&CK Navigator layer (JSON) that visually represents the techniques used in this scenario.
+The layer can be imported directly into the MITRE ATT&CK Navigator for review and analysis.
+
+---
+
+🎯 Disclaimer
+--
+
+This project is created for educational and demonstration purposes only.
+It does not represent a real incident or threat actor.
+---
+
+🚀 Skills Demonstrated
+---
+
+MITRE ATT&CK framework understanding
+
+SOC attack flow analysis
+
+Threat modeling
+
+Documentation and visualization
+
+ATT&CK Navigator usage
+
+---
+
+📬 Feedback
+---
+
+Feedback and suggestions are welcome.
+This project is part of continuous learning in cybersecurity and SOC analysis.
+
+
+
 
