@@ -1,53 +1,51 @@
-# MITRE-ATT-CK-NAVIGATOR
+# MITRE ATT&CK – SOC Attack Scenario Mapping
 
-MITRE ATT&CK – SOC Attack Scenario Mapping
----
+## 📌 Project Overview
 
-This repository demonstrates a practical attack scenario mapped to the MITRE ATT&CK framework using the MITRE ATT&CK Navigator.
-The project is designed to showcase how a SOC analyst can model and understand real-world attacker behavior from initial access to data exfiltration.
+This project demonstrates a practical attack scenario mapped to the MITRE ATT&CK framework using the MITRE ATT&CK Navigator. The objective is to model realistic attacker behavior and visualize how a Security Operations Center (SOC) analyst would track an intrusion from initial access to data exfiltration.
 
-
-
----
-📌 Project Overview
----
-
-The goal of this project is to:
-
-Practice mapping attack techniques to MITRE ATT&CK
-
-Visualize attack flow using ATT&CK Navigator
-
-Understand how attackers move through different tactics during an intrusion
-
-Build SOC-focused documentation suitable for learning and portfolio purposes
-
-This is a practice / learning project, not a full APT simulation.
-
+This is a learning and portfolio project designed to strengthen understanding of attacker tradecraft, ATT&CK tactics and techniques, and SOC-style documentation.
 
 ---
 
-🧨 Attack Scenario Summary
----
+## 🎯 Project Goals
 
-The simulated attack follows this flow:
-
-Phishing email with a malicious Excel attachment
-
-User enables macros, triggering PowerShell execution
-
-PowerShell downloads and executes a payload in memory
-
-Persistence established using Registry Run keys
-
-Credentials dumped from LSASS
-
-Lateral movement using RDP
+* Practice mapping real-world attack behavior to MITRE ATT&CK
+* Visualize attacker progression using ATT&CK Navigator layers
+* Understand tactic-to-technique relationships
+* Create SOC-focused documentation suitable for incident analysis
+* Demonstrate ATT&CK framework proficiency for portfolio purposes
 
 ---
 
-Sensitive data exfiltrated over HTTPS to a C2 server
+## 🧨 Attack Scenario Summary
+
+The simulated intrusion follows this attack path:
+
+1. **Initial Access**
+   Phishing email with a malicious Excel attachment
+
+2. **Execution**
+   User enables macros, triggering PowerShell execution
+
+3. **Command and Control**
+   PowerShell downloads and executes a payload in memory
+
+4. **Persistence**
+   Registry Run keys are created to maintain access
+
+5. **Credential Access**
+   Credentials are dumped from LSASS memory
+
+6. **Lateral Movement**
+   Attacker moves laterally using Remote Desktop Protocol (RDP)
+
+7. **Exfiltration**
+   Sensitive data is exfiltrated over HTTPS to a C2 server
+
 ---
+
+## 🧩 MITRE ATT&CK Mapping
 
 | Tactic              | Technique                                     | ID        |
 | ------------------- | --------------------------------------------- | --------- |
@@ -59,62 +57,55 @@ Sensitive data exfiltrated over HTTPS to a C2 server
 | Lateral Movement    | Remote Services: RDP                          | T1021.001 |
 | Exfiltration        | Exfiltration Over C2 Channel                  | T1041     |
 
-
 ---
 
-🧠 About Missing MITRE ATT&CK Tactics
----
+## 🧠 About Missing MITRE ATT&CK Tactics
 
-Some MITRE ATT&CK tactics such as Discovery, Defense Evasion, or Privilege Escalation are not included in this scenario.
+Some MITRE ATT&CK tactics such as:
+
+* Discovery
+* Defense Evasion
+* Privilege Escalation
+
+are not included in this scenario.
 
 This is intentional.
 
-Not every attack uses all tactics
+* Not every attack uses every tactic
+* Only observed behavior should be mapped
+* Adding unused techniques would reduce accuracy
 
-The scenario focuses on a specific attack path
-
-Adding unused techniques would be inaccurate
-
-This approach reflects real SOC investigations, where only observed behavior is mapped.
+This approach reflects real SOC investigations where analysts map only confirmed attacker activity.
 
 ---
 
-📊 MITRE ATT&CK Navigator
+## 📊 MITRE ATT&CK Navigator
+
+This repository includes a custom MITRE ATT&CK Navigator layer that visually represents the techniques used in this scenario.
+
+You can import the layer directly into the MITRE ATT&CK Navigator to review and analyze the attack flow.
+
 ---
 
-The project includes a custom ATT&CK Navigator layer (JSON) that visually represents the techniques used in this scenario.
-The layer can be imported directly into the MITRE ATT&CK Navigator for review and analysis.
+## 🚀 Skills Demonstrated
+
+* MITRE ATT&CK framework understanding
+* SOC attack flow analysis
+* Threat modeling
+* Incident documentation
+* ATT&CK Navigator usage
+* Analytical thinking
 
 ---
 
-🎯 Disclaimer
---
+## ⚠ Disclaimer
 
-This project is created for educational and demonstration purposes only.
+This project is created strictly for educational and demonstration purposes.
 It does not represent a real incident or threat actor.
----
-
-🚀 Skills Demonstrated
----
-
-MITRE ATT&CK framework understanding
-
-SOC attack flow analysis
-
-Threat modeling
-
-Documentation and visualization
-
-ATT&CK Navigator usage
 
 ---
 
-📬 Feedback
----
+## 📬 Feedback
 
 Feedback and suggestions are welcome.
 This project is part of continuous learning in cybersecurity and SOC analysis.
-
-
-
-
